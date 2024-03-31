@@ -1,1 +1,1 @@
-# Coffee landing page
+# Coffee landing page project
