@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --main-color: #dead5f;
+    --primary-color: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: solid 1px black;
+    background-color: black;
+}
+
+li {
+    list-style: none;
+    display: inline;  
+}
+
+li a {
+    color: white;
+    text-decoration: none; 
+    margin-left: 50px;
+}
+
+li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+header {
+    background-image: url("assets/jeremy-yap-jn-HaGWe4yw-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    font-size: 40px;
+    text-align: center;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: "Playfair Display", serif;
+    position: relative;
+}
+
+button {
+    background-color: var(--main-color);
+    padding: 20px 30px 20px 30px;
+    border: solid 1px black;
+    cursor: pointer;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.header1 h1 {
+    text-transform: uppercase;
+    color: black;
+}
+
+
+
+
+/* SECTION */
+
+section#story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+    height: auto;
+}
+
+
+ section#story .img {
+    background-image: url("assets/nathan-dumlao-nBJHO6wmRWw-unsplash\ \(1\).jpg");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+section#story .section-content .title-style .line {
+    border-top: 1px solid var(--main-color);
+    margin-top: 50px;
+    width: 100px;
+    height: 2px;
+    display: block;
+    transform: translateX(-80px);
+}
+
+
+section#story .section-content .title-style .title {
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: strong;
+}
+
+section#story .section-content .title-style p {
+   color: white;
+   margin-top: 5px;
+}
+
+
+
+
+
+/* SECOND SECTION */
+.coffee-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+
+}
+
+
+.coffee-container .img-2 {
+    width: 300px;
+    height: 300px;
+}
+
+.coffee-container p {
+    color: white;
+}
+
+
+.coffee-container .title-two {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+}
+
+
+
+
+/* Third section for products */
+.prducts {
+    margin: 5rem;
+}
+
+
+.products .title3 {
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+    font-family: "Playfair Display", serif;
+}
+
+
+.products .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .card {
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    animation-name: card;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+.card-img1 {
+    background-image: url("assets/coffee2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img2 {
+    background-image: url("assets/coffee5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card-img3 {
+    background-image: url("assets/coffee6.jpg");
+    background-size: cover;
+    background-position: center;    
+}
+
+.card-title {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+}
+
+
+.items {
+    color: white;
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+
+.foot {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    border-top: 2px solid var(--main-color);
+}
+
+
+
+.foot .container {
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;    
+}
+
+.foot .heading-info {
+    color: var(--main-color);
+}
+
+
+.para {
+    color: var(--main-color);
+}
+
+
+
+@media screen and (max-width: 768px) {
+   .header1 {
+        font-size: 1.5rem;
+   }
+    
+
+   #story .title {
+    transform: translateX(50px);
+   }
+
+   #story p {
+    transform: translateX(50px);
+   }
+   
+   section#story .section-content .title-style .line {
+    border-top: none;
+    }
+
+   #story button {
+    transform: translateX(50px);
+   }
+
+   .title3 {
+    margin-top: -90px;
+
+   }
+
+
+   .cards {
+    margin-top: -70px;
+   }
+
+
+}
+
+
+
+@keyframes card {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
