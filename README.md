@@ -1,1 +1,1 @@
-# Static Web projects with html and css
+# Static Web with html and css
